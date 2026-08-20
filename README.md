@@ -10,5 +10,6 @@ Projeto desenvolvido para a disciplina de Engenharia de Software do curso de Ci�
 - Gustavo
 - João Pedro
 
-#Tema ainda em definição pela equipe.
+#Tema 
+ainda em definição pela equipe.
 
