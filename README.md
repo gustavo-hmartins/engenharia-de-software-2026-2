@@ -6,9 +6,9 @@ Projeto desenvolvido para a disciplina de Engenharia de Software do curso de Ci�
 
 - Gustavo Henrique Martins
 - Vitor
-- Vitor
+- Vitor Rodrigues dos Santos
 - Gustavo
-- João Pedro
+- João Pedro de Oliveira Leite Gonzaga
 
 #Tema 
 
