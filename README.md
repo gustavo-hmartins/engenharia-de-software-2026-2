@@ -5,10 +5,10 @@ Projeto desenvolvido para a disciplina de Engenharia de Software do curso de Ci�
 ## Equipe
 
 - Gustavo Henrique Martins
-- Integrante 2
-- Integrante 3
-- Integrante 4
-- Integrante 5
+- Vitor
+- Vitor
+- Gustavo
+- João Pedro
 
 #Tema ainda em definição pela equipe.
 
