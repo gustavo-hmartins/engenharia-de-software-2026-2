@@ -1,7 +1,10 @@
 # Processo de Desenvolvimento
 
 ## Escolha e Justificativa
-Modelo V, ágil e iterativo, com iterações de 1 semana. <br>
+Modelo V: Parte dos teste obrigatórios antes de passar para outra etapa;
+Ágil: Para o projeto ser flexível perante as situções;
+Iterativo: Faz com que o projeto tenha várias versões das etapas;
+Com iterações de 1 semana. <br>
 Avaliação dos cinco fatores (Boehm e Turner): 
 - Tamanho: 5 pessoas - ágil
 - Criticidade: alto, com dados pessoais - ágil
@@ -12,7 +15,7 @@ Avaliação dos cinco fatores (Boehm e Turner):
 ## Iteração
 - Duração: 1 semana, iniciando na quinta-feira
 - Planejamento: 30min, segunda as 19:30
-- Acompanhamento: reuniões no Google Meet, comunicação contínua pelo WhatsApp,backlogs e tarefas rastreadas no GitHub.
+- Acompanhamento: reuniões no Google Meet, comunicação contínua pelo WhatsApp, backlogs e tarefas rastreadas no GitHub.
 - Demonstração: segunda-feira
 - Retrospectiva: 10 min, após a demonstração 
 
