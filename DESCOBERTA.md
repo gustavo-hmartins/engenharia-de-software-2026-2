@@ -288,7 +288,14 @@ A fatia escolhida atravessa as principais camadas do sistema: interface, regras 
 - **Probabilidade:** média 
 - **Impacto:** médio 
 - **Resposta:** aceitar 
-- **Ação e responsável:** caso ocorra, reduzir ou redistribuir o escopo da iteração durante o planejamento; responsável: Gustavo Henrique. 
+- **Ação e responsável:** caso ocorra, reduzir ou redistribuir o escopo da iteração durante o planejamento; responsável: Gustavo Henrique.
+
+### **R5**
+Risco: Acesso não autorizado aos dados das contas e investimentos dos usuários.
+Probabilidade: média
+Impacto: alto
+Resposta: mitigar
+Ação e responsável: implementar e revisar os mecanismos de autenticação e controle de acesso, garantindo que cada usuário possa acessar somente seus próprios dados; responsável: Vitor Gabriel.
 
 ## Histórico de revisão
 - 2026-08-31: versão inicial 
