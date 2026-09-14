@@ -3,19 +3,12 @@
 | Termo | Definição | Fonte |  
 |---|---|---|  
 | Carteira de investimento | Espaço principal para organizar os ativos pertencentes ao usuário | Descoberta do problema |
-
 | Ativo | Investimento cadastrado pelo usuário em sua carteira | Descoberta do problema |
-
 | Valor investido | Valor associado ao investimento cadastrado na carteira | Descoberta do problema |
-
 | Composição da carteira | Forma como os diferentes investimentos estão distribuídos dentro da carteira | N4 |
-
 | Rentabilidade | Desempenho dos investimentos ao longo do tempo | N3 |
-
 | Aporte | Valor adicionado pelo usuário aos seus investimentos | N5 |
-
 | Retirada | Valor retirado pelo usuário de seus investimentos | N5 |
-
 | Patrimônio | Valor total associado aos investimentos cadastrados pelo usuário | N2 |
 
 \#\# Backlog ordenado  
