@@ -40,7 +40,7 @@ O problema identificado é a dificuldade de organizar e acompanhar, de forma cen
 | N5 | Registrar aportes e retiradas realizadas na carteira | Investidor | E2 | Confirmada |
 | N6 | Visualizar o histórico das movimentações realizadas | Investidor | E2 | Confirmada |
 | N7 | Receber informações claras sobre o desempenho da carteira | Investidor iniciante | E3 | Confirmada |
-| N8 | Acessar a carteira pelo celular de forma simples e rápida | Investidor | E3 | Confirmada |
+
 
 ## Escopo
 ### **Cadastro de usuário**
@@ -138,23 +138,47 @@ O valor deverá ser apresentado de forma centralizada para facilitar o acompanha
 - Atualização do valor quando os ativos forem adicionados, editados ou removidos.
 
 ### **Acompanhamento do desempenho**
-O sistema deverá apresentar informações que permitam ao usuário acompanhar o desempenho de sua carteira.
+O sistema deverá apresentar informações que permitam ao usuário acompanhar o desempenho de sua carteira, conforme os dados disponíveis no sistema.
 
 **Inclui:**
-- Visualização do desempenho geral da carteira;
+- Visualização das informações disponíveis sobre o desempenho da carteira;
 - Comparação entre valores registrados em diferentes momentos, quando os dados disponíveis permitirem;
 - Apresentação das informações de maneira organizada;
-- Identificação de evolução positiva ou negativa da carteira.
+- Identificação de evolução positiva ou negativa da carteira, quando houver dados suficientes.
+
+A implementação completa de rentabilidade e acompanhamento histórico do desempenho poderá ser realizada em uma evolução futura do sistema.
 
 ### **Valorização e desvalorização dos ativos**
-O sistema deverá permitir que o usuário visualize se os ativos cadastrados apresentaram valorização ou desvalorização.
+O sistema poderá permitir que o usuário visualize se os ativos cadastrados apresentaram valorização ou desvalorização quando houver dados suficientes para esse cálculo.
 
-**Inclui:**
+Essa funcionalidade não faz parte da fatia mínima obrigatória do MVP caso dependa de cotações externas em tempo real.
+
+**Inclui, como evolução futura:**
 - Identificação da variação de valor;
 - Apresentação da valorização;
 - Apresentação da desvalorização;
 - Visualização das informações individualmente por ativo;
 - Apresentação das informações de forma compreensível ao usuário.
+
+### **Priorização do escopo**
+
+As necessidades identificadas durante a descoberta serão tratadas em diferentes níveis de prioridade.
+
+**Necessidades atendidas pelo MVP**
+- N1: Cadastrar e organizar os investimentos;
+- N2: Visualizar o valor total investido;
+- N4: Consultar a distribuição da carteira;
+- N8: Acessar a carteira pelo celular de forma simples e rápida.
+
+**Necessidades parcialmente atendidas pelo MVP ou dependentes de evolução**
+- N2: A evolução do patrimônio poderá ser acompanhada futuramente com dados históricos suficientes;
+- N7: O MVP fornecerá informações organizadas sobre a carteira, enquanto análises mais completas de desempenho poderão ser adicionadas posteriormente.
+
+**Necessidades para evoluções futuras**
+- N3: Acompanhamento completo da rentabilidade;
+- N5: Registro de aportes e retiradas;
+- N6: Histórico detalhado das movimentações;
+- Recursos avançados relacionados ao desempenho da carteira.
 
 ## Fora de escopo nesta versão
 ### **Compra e venda real de ativos**
@@ -242,24 +266,33 @@ O sistema não oferecerá atendimento de consultores ou especialistas financeiro
 **Motivo da exclusão:** a aplicação será uma ferramenta de software para organização e acompanhamento das informações dos investimentos, não uma plataforma de prestação de serviços financeiros.
 
 ## Produto mínimo viável
-O Produto Mínimo Viável (MVP) da Carteira de Investimentos será uma versão funcional e reduzida do sistema, capaz de atender à principal necessidade identificada pelos usuários e, ao mesmo tempo, permitir que a equipe valide a solução com usuários reais.
+O Produto Mínimo Viável (MVP) da Carteira de Investimentos será uma versão funcional e reduzida do sistema, capaz de atender à principal necessidade identificada pelos usuários e, ao mesmo tempo, permitir que a equipe valide a solução.
 
-A definição da fatia do MVP considera três critérios principais: necessidade confirmada, risco técnico e demonstrabilidade. A partir das necessidades levantadas, foi escolhida como primeira fatia a funcionalidade de cadastrar e acompanhar investimentos, permitindo que o usuário registre seus ativos e visualize as principais informações de sua carteira.
+A definição da fatia do MVP considera três critérios principais:
 
-Essa escolha possibilita que o usuário tenha contato com o objetivo central do sistema sem que seja necessário implementar inicialmente todas as funcionalidades planejadas.
+- Necessidade confirmada;
+- Risco técnico;
+- Demonstrabilidade.
+
+A partir das necessidades levantadas, foi escolhida como primeira fatia a funcionalidade de cadastrar e acompanhar investimentos, permitindo que o usuário registre seus ativos e visualize as principais informações de sua carteira.
+
+Para que essa funcionalidade seja utilizável de forma segura, o MVP também deverá contemplar cadastro e autenticação do usuário.
 
 ### **Funcionalidades incluídas no MVP**
 O MVP será composto pelas seguintes funcionalidades:
-| ID | Funcionalidade | Descrição |
-|---|---|---|
-| F1 | Cadastro de investimento | Permitir que o usuário registre um investimento informando dados básicos, como ativo, tipo, quantidade e valor investido. |
-| F2 | Visualização da carteira | Exibir os investimentos cadastrados pelo usuário em uma visão organizada. |
-| F3 | Consulta de informações | Permitir que o usuário consulte os dados dos investimentos registrados. |
-| F4 | Edição e exclusão | Permitir alterar ou remover um investimento cadastrado. |
-| F5 | Cálculo básico da carteira | Apresentar o valor total investido e a distribuição dos investimentos cadastrados. |
-| F6 | Persistência dos dados |Armazenar os investimentos no banco de dados para que as informações não sejam perdidas. |
+| ID | Funcionalidade | Descrição | Necessidade relacionadas |
+|---|---|---|---|
+| F1 | Cadastro e autenticação | Permitir que o usuário crie uma conta e acesse sua carteira de forma autenticada | Escopo |
+| F2 | Cadastro de investimento | Permitir que o usuário registre um investimento informando ativo, tipo, quantidade e valor investido | N1 |
+| F3 | Visualização da carteira | Exibir os investimentos cadastrados pelo usuário em uma visão organizada | N1 |
+| F4 | Edição e exclusão | Permitir alterar ou remover um investimento cadastrado | N1 |
+| F5 | Cálculo básico da carteira |	Apresentar o valor total investido e a distribuição dos investimentos cadastrados | N2 e N4 |
+| F6 | Persistência dos dados | Armazenar os investimentos no banco de dados para que as informações não sejam perdidas | N1 |
+| F7 | Interface responsiva |	Permitir a utilização da carteira em computadores e dispositivos móveis | N8 |
 
-A fatia escolhida atravessa as principais camadas do sistema: interface, regras de negócio e banco de dados. Dessa forma, o MVP não será apenas uma tela demonstrativa, mas uma funcionalidade completa que poderá ser utilizada e avaliada.
+A fatia escolhida atravessa as principais camadas do sistema: interface, regras de negócio e banco de dados.
+
+Dessa forma, o MVP não será apenas uma tela demonstrativa, mas uma funcionalidade completa que poderá ser utilizada e avaliada.
 
 ## Riscos iniciais
 ### **R1** 
@@ -288,7 +321,14 @@ A fatia escolhida atravessa as principais camadas do sistema: interface, regras 
 - **Probabilidade:** média 
 - **Impacto:** médio 
 - **Resposta:** aceitar 
-- **Ação e responsável:** caso ocorra, reduzir ou redistribuir o escopo da iteração durante o planejamento; responsável: Gustavo Henrique. 
+- **Ação e responsável:** caso ocorra, reduzir ou redistribuir o escopo da iteração durante o planejamento; responsável: Gustavo Henrique.
+
+### **R5**
+Risco: Acesso não autorizado aos dados das contas e investimentos dos usuários.
+Probabilidade: média
+Impacto: alto
+Resposta: mitigar
+Ação e responsável: implementar e revisar os mecanismos de autenticação e controle de acesso, garantindo que cada usuário possa acessar somente seus próprios dados; responsável: Vitor Gabriel.
 
 ## Histórico de revisão
-- 2026-08-31: versão inicial 
+- 2026-09-14: versão atualizada
