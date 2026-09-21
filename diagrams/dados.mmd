@@ -1,0 +1,37 @@
+erDiagram
+    USUARIO ||--|| PERFIL_INVESTIDOR : possui
+    USUARIO ||--|| CARTEIRA_INVESTIMENTO : possui
+    CARTEIRA_INVESTIMENTO ||--o{ ATIVO : contem
+
+    USUARIO {
+        UUID id PK
+        string nome
+        string email UK
+        string senha_hash
+        datetime criado_em
+    }
+
+    PERFIL_INVESTIDOR {
+        UUID id PK
+        UUID usuario_id FK
+        string perfil_risco
+        string preferencias
+    }
+
+    CARTEIRA_INVESTIMENTO {
+        UUID id PK
+        UUID usuario_id FK
+        datetime criado_em
+    }
+
+    ATIVO {
+        UUID id PK
+        UUID carteira_id FK
+        string nome_ativo
+        string tipo_investimento
+        decimal quantidade
+        decimal valor_investido
+        boolean ativo "soft delete - true=ativo, false=inativo"
+        datetime criado_em
+        datetime atualizado_em
+    }

@@ -1,0 +1,15 @@
+sequenceDiagram
+    actor Investidor
+    participant Sistema
+    participant BD as Banco de Dados
+
+    Investidor->>Sistema: Solicita visualização da carteira
+    Sistema->>BD: Consulta investimentos ativos do usuário (ativo = true)
+    BD-->>Sistema: Retorna lista de ativos
+
+    alt A1: Carteira vazia
+        Sistema-->>Investidor: Orienta que não há investimentos cadastrados
+    else Fluxo principal (caminho feliz)
+        Sistema->>Sistema: Calcula em memória o valor total investido (Patrimônio)
+        Sistema-->>Investidor: Retorna composição da carteira e patrimônio total
+    end
