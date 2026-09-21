@@ -1,0 +1,34 @@
+classDiagram
+    class Investidor {
+        +UUID id
+        +String nome
+        +String email
+        +String senha
+    }
+
+    class PerfilDoInvestidor {
+        +UUID id
+        +String preferencias
+        +String perfilRisco
+    }
+
+    class CarteiraDeInvestimento {
+        +UUID id
+        +Decimal patrimonioTotal()
+    }
+
+    class AtivoInvestimento {
+        +UUID id
+        +String nomeAtivo
+        +String tipo
+        +Decimal quantidade
+        +Decimal valorInvestido
+        +Boolean ativo
+    }
+
+    Investidor "1" --> "1" PerfilDoInvestidor : possui
+    Investidor "1" --> "1" CarteiraDeInvestimento : possui
+    CarteiraDeInvestimento "1" --> "0..*" AtivoInvestimento : contém
+
+    note for Investidor "Ator principal do sistema.\nCarteira estritamente privada (RE-06):\nsem relacionamento social entre contas."
+    note for AtivoInvestimento "Apagamento lógico via campo 'ativo'.\nRegistro nunca é removido fisicamente."

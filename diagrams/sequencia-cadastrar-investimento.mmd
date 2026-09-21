@@ -1,0 +1,21 @@
+sequenceDiagram
+    actor Investidor
+    participant Sistema
+    participant Carteira as Carteira de Investimento
+    participant BD as Banco de Dados
+
+    Investidor->>Sistema: Informa dados do ativo (nome, tipo, quantidade, valor)
+
+    alt A1: Dados obrigatórios não preenchidos
+        Sistema-->>Investidor: Recusa - campo obrigatório ausente
+    else A2: Dados inválidos
+        Sistema->>Sistema: Valida os dados informados
+        Sistema-->>Investidor: Recusa - dados inválidos
+    else Fluxo principal (caminho feliz)
+        Sistema->>Sistema: Valida os dados informados
+        Sistema->>Carteira: Associa investimento à carteira do usuário
+        Carteira->>BD: Persiste novo registro de ativo
+        BD-->>Carteira: Confirmação de persistência
+        Carteira-->>Sistema: Ativo associado com sucesso
+        Sistema-->>Investidor: Confirmação de sucesso no cadastro
+    end
