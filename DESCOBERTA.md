@@ -40,7 +40,7 @@ O problema identificado é a dificuldade de organizar e acompanhar, de forma cen
 | N5 | Registrar aportes e retiradas realizadas na carteira | Investidor | E2 | Confirmada |
 | N6 | Visualizar o histórico das movimentações realizadas | Investidor | E2 | Confirmada |
 | N7 | Receber informações claras sobre o desempenho da carteira | Investidor iniciante | E3 | Confirmada |
-| N8 | Acessar a carteira pelo celular de forma simples e rápida | Investidor | E3 | Confirmada |
+
 
 ## Escopo
 ### **Cadastro de usuário**
