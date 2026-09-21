@@ -1,7 +1,10 @@
 # Processo de Desenvolvimento
 
 ## Escolha e Justificativa
-Modelo V, ágil e iterativo, com iterações de 1 semana. <br>
+Modelo V: Usaremos a parte de fazer testes de todas as etapas, antes de avançar para a próxima; 
+Ágil: Usaremos a parte da versatilidade, podendo mudar os processos ao decorrer dos desenvolvimentos;
+Iterativo: Com a utilização desse meio, o projeto pode ter várias versões de uma mesma etapa;
+Com iterações de 1 semana. <br>
 Avaliação dos cinco fatores (Boehm e Turner): 
 - Tamanho: 5 pessoas - ágil
 - Criticidade: alto, com dados pessoais - ágil
