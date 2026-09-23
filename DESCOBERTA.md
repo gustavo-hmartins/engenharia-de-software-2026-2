@@ -29,17 +29,43 @@ O problema identificado é a dificuldade de organizar e acompanhar, de forma cen
 - **O que ela não precisa:** funcionalidades voltadas exclusivamente para iniciantes, como explicações básicas sobre o que são ações ou renda fixa.
 
 ## Fontes consultadas
----------------------
+- **D1 — Portal do Investidor (CVM).** “Passo 01: Identifique a sua situação atual”.
+  Fonte utilizada para compreender a importância da organização e centralização das informações financeiras e dos investimentos.
+  Disponível em: https://www.gov.br/investidor/pt-br/investir/antes-de-investir/organize-a-sua-vida-financeira/passo-01-identifique-a-sua-situacao-atual
+  
+- **D2 — Portal do Investidor (CVM).** “Como reduzir o risco?”.
+  Fonte utilizada para compreender a importância da diversificação e da composição de uma carteira de investimentos.
+  Disponível em: https://www.gov.br/investidor/pt-br/investir/tipos-de-investimentos/etfs/como-reduzir-o-risco
+  
+- **D3 — Comissão de Valores Mobiliários (CVM).** “Perfil e Comportamento dos Investidores 2024”.
+  Pesquisa utilizada como referência sobre características e comportamentos dos investidores, incluindo aspectos relacionados à rentabilidade e à diversificação da carteira.
+  Disponível em: https://www.gov.br/investidor/pt-br/educacional/publicacoes-educacionais/pesquisas/relatorio-perfil-e-comportamento-do-investidor-2024.pdf
+  
+- **D4 — Portal do Investidor (CVM).** “Entenda as características dos investimentos”.
+  Fonte utilizada para compreender características dos diferentes tipos de investimentos, como risco, retorno e liquidez.
+  Disponível em: https://www.gov.br/investidor/pt-br/investir/antes-de-investir/entenda-as-caracteristicas-dos-investimentos
+  
+- **D5 — Portal do Investidor (CVM).** “Entenda o suitability”.
+  Fonte utilizada como referência para o conceito de perfil do investidor e perfil de risco.
+  Disponível em: https://www.gov.br/investidor/pt-br/investir/antes-de-investir/respeite-o-seu-perfil-de-investidor/entenda-o-suitability
+  
+- **D6 — Portal do Investidor (CVM).** “Informação e comunicação”.
+  Fonte utilizada para compreender a importância do registro e
+  acompanhamento das operações e movimentações realizadas pelo investidor,
+  incluindo extratos de movimentação e acompanhamento das transações.
+  Disponível em:
+  https://www.gov.br/investidor/pt-br/investir/como-investir/como-funciona-a-bolsa/informacao-e-comunicacao
+  
 ## Necessidades levantadas
 | id | Necessidade | Parte | Fonte | Situação |
 |---|---|---|---|---|
-| N1 | Cadastrar e organizar em uma única carteira | investidor | E1 | Confirmada |
-| N2 | Visualizar o valor total investido e a evolução do patrimônio | Investidor | E2 | Confirmada |
-| N3 | Acompanhar a rentabilidade dos investimentos | Investidor | E2 | Confirmada |
-| N4 | Consultar a distribuição da carteira por tipo de investimento | Investidor | E1 | Confirmada |
-| N5 | Registrar aportes e retiradas realizadas na carteira | Investidor | E2 | Confirmada |
-| N6 | Visualizar o histórico das movimentações realizadas | Investidor | E2 | Confirmada |
-| N7 | Receber informações claras sobre o desempenho da carteira | Investidor iniciante | E3 | Confirmada |
+| N1 | Cadastrar e organizar em uma única carteira | investidor | D1 | Confirmada |
+| N2 | Visualizar o valor total investido e a evolução do patrimônio | Investidor | D1, D3 | Confirmada |
+| N3 | Acompanhar a rentabilidade dos investimentos | Investidor | D3, D4 | Confirmada |
+| N4 | Consultar a distribuição da carteira por tipo de investimento | Investidor | D2, D3 | Confirmada |
+| N5 | Registrar aportes e retiradas realizadas na carteira | Investidor | D6 | Confirmada |
+| N6 | Visualizar o histórico das movimentações realizadas | Investidor | D6 | Confirmada |
+| N7 | Receber informações claras sobre o desempenho da carteira | Investidor iniciante | D3, D4 | Confirmada |
 
 
 ## Escopo
@@ -74,9 +100,9 @@ O perfil terá como objetivo organizar informações do usuário e poderá ser u
 - Alteração dos dados cadastrados.
   
 ### **Criação e gerenciamento da carteira**
-- O usuário poderá criar e acessar sua carteira de investimentos dentro do sistema.
-- A carteira funcionará como o espaço principal para organização dos ativos pertencentes ao usuário.
-- 
+O usuário poderá criar e acessar sua carteira de investimentos dentro do sistema.
+A carteira funcionará como o espaço principal para organização dos ativos pertencentes ao usuário.
+
 **Inclui:**
 - Criação da carteira;
 - Identificação da carteira;
@@ -167,8 +193,7 @@ As necessidades identificadas durante a descoberta serão tratadas em diferentes
 **Necessidades atendidas pelo MVP**
 - N1: Cadastrar e organizar os investimentos;
 - N2: Visualizar o valor total investido;
-- N4: Consultar a distribuição da carteira;
-- N8: Acessar a carteira pelo celular de forma simples e rápida.
+- N4: Consultar a distribuição da carteira.
 
 **Necessidades parcialmente atendidas pelo MVP ou dependentes de evolução**
 - N2: A evolução do patrimônio poderá ser acompanhada futuramente com dados históricos suficientes;
@@ -324,11 +349,11 @@ Dessa forma, o MVP não será apenas uma tela demonstrativa, mas uma funcionalid
 - **Ação e responsável:** caso ocorra, reduzir ou redistribuir o escopo da iteração durante o planejamento; responsável: Gustavo Henrique.
 
 ### **R5**
-Risco: Acesso não autorizado aos dados das contas e investimentos dos usuários.
-Probabilidade: média
-Impacto: alto
-Resposta: mitigar
-Ação e responsável: implementar e revisar os mecanismos de autenticação e controle de acesso, garantindo que cada usuário possa acessar somente seus próprios dados; responsável: Vitor Gabriel.
+- **Risco:** Acesso não autorizado aos dados das contas e investimentos dos usuários.
+- **Probabilidade:** média
+- **Impacto:** alto
+- **Resposta:** mitigar
+- **Ação e responsável:** implementar e revisar os mecanismos de autenticação e controle de acesso, garantindo que cada usuário possa acessar somente seus próprios dados; responsável: Vitor Gabriel.
 
 ## Histórico de revisão
-- 2026-09-14: versão atualizada
+- 2026-09-22: versão atualizada
