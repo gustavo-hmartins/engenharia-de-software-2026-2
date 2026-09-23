@@ -15,7 +15,7 @@ Avaliação dos cinco fatores (Boehm e Turner):
 ## Iteração
 - Duração: 1 semana, iniciando na quinta-feira
 - Planejamento: 30min, segunda as 19:30
-- Acompanhamento: reuniões no Google Meet, comunicação contínua pelo WhatsApp,backlogs e tarefas rastreadas no GitHub.
+- Acompanhamento: reuniões no Google Meet, comunicação contínua pelo WhatsApp, backlogs e tarefas rastreadas no GitHub.
 - Demonstração: segunda-feira
 - Retrospectiva: 10 min, após a demonstração 
 
@@ -31,4 +31,4 @@ A definir pelo grupo
 - Item de backlog fechado e vinculado ao pull request
 
 ## Histórico de Revisão do Processo
-- 2026-08-24
+- 2026-09-23
