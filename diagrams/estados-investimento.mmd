@@ -1,0 +1,17 @@
+stateDiagram-v2
+    [*] --> Cadastrado : Investidor cadastra o ativo (UC-01)
+
+    Cadastrado --> Editado : Investidor atualiza dados do ativo
+    Editado --> Editado : Nova atualização
+    Editado --> Removido_Inativo : Investidor remove o ativo (HU-04)
+
+    Cadastrado --> Removido_Inativo : Investidor remove o ativo (HU-04)
+
+    Removido_Inativo --> [*]
+
+    note right of Removido_Inativo
+        Apagamento lógico (soft delete):
+        campo 'ativo' = false.
+        Registro permanece no banco
+        para histórico/integridade referencial.
+    end note

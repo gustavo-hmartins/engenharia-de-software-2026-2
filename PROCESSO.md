@@ -1,9 +1,9 @@
 # Processo de Desenvolvimento
 
 ## Escolha e Justificativa
-Modelo V: Parte dos teste obrigatórios antes de passar para outra etapa;
-Ágil: Para o projeto ser flexível perante as situções;
-Iterativo: Faz com que o projeto tenha várias versões das etapas;
+Modelo V: Usaremos a parte de fazer testes de todas as etapas, antes de avançar para a próxima; 
+Ágil: Usaremos a parte da versatilidade, podendo mudar os processos ao decorrer dos desenvolvimentos;
+Iterativo: Com a utilização desse meio, o projeto pode ter várias versões de uma mesma etapa;
 Com iterações de 1 semana. <br>
 Avaliação dos cinco fatores (Boehm e Turner): 
 - Tamanho: 5 pessoas - ágil
@@ -31,4 +31,4 @@ A definir pelo grupo
 - Item de backlog fechado e vinculado ao pull request
 
 ## Histórico de Revisão do Processo
-- 2026-08-24
+- 2026-09-23
