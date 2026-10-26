@@ -1,0 +1,17 @@
+graph TD
+    subgraph User["Ambiente do Usuário (Cliente)"]
+        Browser[Navegador Web / Chrome, Firefox, Safari]
+    end
+
+    subgraph Cloud["Ambiente de Hospedagem (Nuvem)"]
+        subgraph AppServer["Servidor de Aplicação"]
+            Monolith[Monólito Modular / Backend]
+        end
+    end
+
+    subgraph Database["Ambiente de Persistência"]
+        DBServer[(Servidor de Banco de Dados Relacional)]
+    end
+
+    Browser -->|Requisições HTTP (API REST / JSON)| AppServer
+    AppServer -->|Conexão JDBC / Driver DB| DBServer
