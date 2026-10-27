@@ -1,25 +1,21 @@
 graph LR
-    subgraph Cliente ["Frontend (Web Responsiva)"]
-        UI[Interface do Usuário / SPA]
+    subgraph Cliente ["Cliente"]
+        Browser[Navegador Web / UI React]
     end
 
-    subgraph Backend ["Backend (Monólito Modular)"]
-        subgraph Borda ["Camada de Borda"]
-            Controllers[Controllers / Rotas API REST]
+    subgraph App ["Aplicação Next.js (Full-Stack / Monolito)"]
+        subgraph Frontend ["Camada de Apresentação"]
+            Pages[Páginas & Componentes]
         end
-        subgraph Dominio ["Camada de Domínio"]
-            Services[Serviços & Regras de Negócio]
+        subgraph Backend ["Camada de API / Servidor"]
+            API[Route Handlers / Server Actions]
         end
-        subgraph Persistencia ["Camada de Persistência"]
-            Repositories[Repositórios & ORM]
-        end
-        Controllers --> Services
-        Services --> Repositories
+        Pages -->|Fetch / Server Actions| API
     end
 
     subgraph DB ["Banco de Dados Relacional"]
-        Tables[(Tabelas: Usuários, Perfis, Carteiras, Ativos)]
+        Tables[(Tabelas: Usuários, Carteiras, Ativos)]
     end
 
-    UI -->|HTTP / JSON - API REST| Controllers
-    Repositories -->|Consultas / Transações SQL| DB
+    Browser -->|HTTP / SSR| Pages
+    API -->|Consultas / ORM SQL| DB
