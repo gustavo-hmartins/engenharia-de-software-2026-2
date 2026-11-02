@@ -82,49 +82,53 @@ A preparação da demonstração faz parte do trabalho: reservar tempo para conf
 | ----- | ----- |
 | Itens planejados | 2 |
 | Pontos planejados | 8 |
-| Itens concluídos conforme a definição de pronto | \[preencher\] |
-| Pontos concluídos | \[preencher\] |
-| Itens devolvidos ao backlog | \[identificar os itens e o motivo\] |
-| Primeiro item concluído em | \[data ou dia da iteração\] |
-| Issues bloqueadas e duração dos bloqueios | \[preencher, incluindo a fonte\] |
-| Pull requests integrados | \[número e links\] |
-| Velocidade observada | \[soma dos pontos dos itens concluídos\] |
+| Itens concluídos conforme a definição de pronto | Item 1 e Item 2|
+| Pontos concluídos | 8 |
+| Itens devolvidos ao backlog | Nenhum |
+| Primeiro item concluído em | Item 1, foi concluído em 1 semana |
+| Issues bloqueadas e duração dos bloqueios | Nenhuma |
+| Pull requests integrados | PR #1 - https://github.com/gustavo-hmartins/engenharia-de-software-2026-2/pull/30 PR #2 - https://github.com/gustavo-hmartins/engenharia-de-software-2026-2/pull/30 |
+| Velocidade observada | Aproximadamente 1 semana |
 
 ## **Demonstração e observação do usuário**
+Ao final da primeira iteração, foi apresentada a implementação das funcionalidades de cadastro de usuário e login, demonstrando o fluxo inicial de acesso ao sistema Carteira de Investimentos.
 
-**O que foi demonstrado:** \[descrever o fluxo realmente apresentado e o ambiente utilizado\].  
-**Observação ou comentário do usuário:** \[registrar o comentário real; se não houver usuário presente, declarar isso\].  
-**Decisão decorrente do comentário:** \[explicar se o feedback gerou ajuste no produto ou se foi registrado no backlog para avaliação futura\].
+Durante a demonstração, foram contemplados os seguintes aspectos:
+* **Cadastro de usuário:** apresentação do formulário de criação de conta e do registro das informações necessárias para o acesso ao sistema.
+* **Validação dos dados:** verificação do comportamento do sistema diante do preenchimento incorreto ou incompleto dos campos obrigatórios.
+* **Login e autenticação:** demonstração do acesso ao sistema utilizando credenciais cadastradas e da validação das informações de autenticação.
+* **Controle de acesso:** verificação de que o usuário precisa estar autenticado para acessar as funcionalidades protegidas.
 
-## 
-
-## 
+### **Observações do usuário:**
+A primeira iteração estabeleceu a estrutura inicial de acesso à aplicação. A demonstração permitiu verificar o funcionamento do cadastro e da autenticação, que servirão de base para as próximas funcionalidades.
 
 ## **Retrospectiva da Iteração 1**
 
-### **Evidências a consultar**
+A retrospectiva da primeira iteração avaliou a organização e a execução do trabalho realizado durante aproximadamente uma semana. A meta definida para o ciclo foi concluída: implementar o cadastro de usuário e o login da aplicação Carteira de Investimentos.
 
-| Evidência | Dado a registrar | Fonte |
-| ----- | ----- | ----- |
-| Itens planejados, concluídos e devolvidos ao backlog | \[preencher\] | Quadro do GitHub e issues |
-| Pontos planejados e pontos concluídos | \[preencher\] | Estimativas acordadas e quadro |
-| Momento em que o primeiro item foi concluído | \[preencher\] | Histórico de fechamento das issues |
-| Quantidade de pull requests e tempo entre abertura e integração | \[preencher\] | Histórico de pull requests |
-| Itens bloqueados e tempo até o desbloqueio | \[preencher\] | Issues e quadro |
-| Testes executados, falhas encontradas e correções | \[preencher\] | Registros de teste e pull requests |
+### O que funcionou bem
 
-### **Decisões para a próxima iteração**
+- A equipe trabalhou com uma meta objetiva, concentrada em duas funcionalidades fundamentais para o sistema.
+- A divisão do trabalho em tarefas menores ajudou a organizar as atividades entre os integrantes.
+- O cadastro de usuário e o login foram concluídos dentro do período aproximado de uma semana.
+- A conclusão dessas funcionalidades estabeleceu a base de acesso necessária para que os usuários possam utilizar as próximas funcionalidades da carteira.
 
-| Mudança acordada | Responsável | Como verificar | Quando verificar |
-| ----- | ----- | ----- | ----- |
-| \[mudança específica; evitar intenção genérica\] | \[integrante\] | \[medida ou evidência que demonstrará o resultado\] | Retrospectiva da Iteração 2 |
-| \[segunda mudança, se necessária\] | \[integrante\] | \[medida ou evidência que demonstrará o resultado\] | Retrospectiva da Iteração 2 |
+### O que pode ser melhorado
 
-## 
+- **Comunicação durante o desenvolvimento:** como as tarefas são divididas entre os integrantes, é importante compartilhar decisões técnicas, alterações e dificuldades durante a execução, evitando que informações fiquem isoladas.
+- **Revisão e integração do código:** a integração não deve depender de apenas um integrante. As contribuições devem ser registradas em pull requests e revisadas por outra pessoa da equipe antes de serem incorporadas à branch principal.
+- **Acompanhamento das tarefas:** o GitHub Projects e as issues devem ser atualizados durante a semana, para que o quadro represente o andamento real do trabalho.
 
-## 
+### Ações de melhoria para a Iteração 2
 
-## 
+| Ação | Como será realizada | Como verificar |
+|---|---|---|
+| Ampliar a revisão compartilhada do código | O integrante responsável pela tarefa abrirá ou atualizará o pull request, e outro integrante fará a revisão antes da integração à branch `main`. | Verificar se os pull requests da iteração possuem revisão de outro integrante e se foram integrados somente após a conferência. |
+| Manter o quadro atualizado | Cada responsável atualizará a issue e o cartão no GitHub Projects quando iniciar, bloquear, enviar para revisão ou concluir uma tarefa. | Conferir, durante a iteração e no encerramento, se os estados do quadro correspondem ao andamento das atividades. |
+
+### O que a equipe deve manter
+
+A equipe deve manter o planejamento com uma meta definida, a divisão das funcionalidades em tarefas menores, o acompanhamento pelo GitHub Projects e a demonstração ao final da iteração. A duração de aproximadamente uma semana pode continuar como referência inicial, sendo reavaliada conforme a capacidade e os resultados dos próximos ciclos.
 
 ## **Revisão dos riscos**
 
@@ -140,8 +144,6 @@ A preparação da demonstração faz parte do trabalho: reservar tempo para conf
 A seleção definitiva deve ocorrer após a retrospectiva da Iteração 1, considerando o que foi realmente concluído, os itens devolvidos ao backlog, os riscos e a capacidade observada. Como direção inicial, a próxima iteração deverá priorizar a primeira fatia funcional do MVP: **cadastrar um investimento e visualizar os investimentos da própria carteira**, respeitando as dependências de cadastro e autenticação e os critérios do REQUISITOS.md (especialmente HU-01 e o caso de uso UC-01).
 
 A composição exata, as estimativas e a meta da Iteração 2 não estão fixadas aqui, pois dependem do resultado do ciclo anterior e do planejamento da equipe.
-
-## 
 
 ## **Histórico de revisão**
 
