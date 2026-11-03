@@ -2,6 +2,8 @@
 
 Este documento registra o planejamento, o acompanhamento, os resultados e as retrospectivas das iterações do projeto **Carteira de Investimentos**. O PROCESSO.md define como a equipe trabalha; o REQUISITOS.md define o escopo, as prioridades e os critérios de aceitação do produto; este arquivo registra o trabalho planejado e o que foi aprendido a cada ciclo.
 
+**Link do Quadro:** https://github.com/users/gustavo-hmartins/projects/1
+
 ## **Acordos de planejamento e acompanhamento**
 
 * **Duração:** uma semana, com início na quinta-feira, conforme o PROCESSO.md.  
