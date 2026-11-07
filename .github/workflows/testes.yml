@@ -1,0 +1,32 @@
+name: Testes Automatizados
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  testes:
+    name: Executar testes
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: carteira-investimentos
+
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: carteira-investimentos/package-lock.json
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Executar testes
+        run: npm test -- --ci
