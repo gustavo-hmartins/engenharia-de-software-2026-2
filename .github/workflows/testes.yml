@@ -2,20 +2,21 @@ name: Testes Automatizados
 
 on:
   push:
+    branches: [ main, GusttavoFS-patch-9 ]
   pull_request:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  testes:
-    name: Executar testes
+  test:
     runs-on: ubuntu-latest
 
     defaults:
       run:
-        working-directory: carteira-investimentos
+        working-directory: ./carteira-investimentos
 
     steps:
-      - name: Baixar o código
+      - name: Checkout do código
         uses: actions/checkout@v4
 
       - name: Configurar Node.js
