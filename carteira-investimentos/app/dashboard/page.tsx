@@ -1,3 +1,4 @@
+import PainelAtivos from "@/components/PainelAtivos";
 export default function DashboardHome() {
   return (
     <div className="max-w-6xl mx-auto space-y-8">
@@ -27,7 +28,10 @@ export default function DashboardHome() {
           </div>
         </div>
       </div>
-
+      <section className="mt-8">
+        <h2 className="text-xl font-semibold text-white mb-4">Acompanhamento de Mercado</h2>
+        <PainelAtivos />
+      </section>
       {/* Tabela de Investimentos */}
       <div className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
         <div className="p-6 border-b border-slate-800">
@@ -47,7 +51,9 @@ export default function DashboardHome() {
             <tbody className="divide-y divide-slate-800 text-sm text-white">
               {/* Espaço reservado para as linhas de dados que virão do banco SQL */}
               <tr>
-                <td className="p-6 text-center text-slate-500" colSpan={4}>Nenhum investimento cadastrado ainda.</td>
+                <td className="p-4">PETR4 - Petrobras PN</td>
+                <td className="p-4">XP Investimentos</td>
+                <td className="p-4">R$ 10.000,00</td>
               </tr>
             </tbody>
           </table>
