@@ -2,7 +2,7 @@ name: Testes Automatizados
 
 on:
   push:
-    branches: [ main, GusttavoFS-patch-9 ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
   workflow_dispatch:
