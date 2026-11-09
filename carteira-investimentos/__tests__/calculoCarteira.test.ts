@@ -21,4 +21,12 @@ describe('Testes da carteira de investimentos', () => {
 
     expect(calculoCarteira(ativos)).toBe(60);
   });
+
+  test('deve retornar zero para quantidade zero', () => {
+  const ativos = [
+    { nome: 'PETR4', quantidade: 0, preco: 35 },
+  ];
+
+  expect(calculoCarteira(ativos)).toBe(0);
+  });
 });
